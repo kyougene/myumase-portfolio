@@ -1,9 +1,15 @@
-import React from "react";
+import { useEffect } from "react";
 import Navbar from './Navbar';
 import "../background.css";
 import Footer from './Footer';
 
 const About = () => {
+
+  useEffect(() => {
+    document.title = "ABOUT | MYUMASE";
+}, []);
+
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />

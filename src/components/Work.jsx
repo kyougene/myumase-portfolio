@@ -3,8 +3,15 @@ import WorkCard from './WorkCard';
 import data from "../data/work.json";
 import "../background.css";
 import Footer from './Footer';
+import { useEffect } from 'react';
 
 const Work = () => {
+
+  useEffect(() => {
+    document.title = "WORKS | MYUMASE";
+}, []);
+
+
   return (
     <>
       <Navbar />

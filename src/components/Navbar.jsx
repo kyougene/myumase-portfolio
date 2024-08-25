@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-2 fixed w-full z-10 lg:backdrop-blur-sm  bg-transparent">
+    <nav className="p-2 fixed w-full z-10 backdrop-blur-sm  bg-transparent">
       <div className="flex w-full justify-end md:justify-between items-center">
         {/* Logo (visible on desktop) */}
         <Link to="/" className="hidden md:block w-1/6 h-1/3">

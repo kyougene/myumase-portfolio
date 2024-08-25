@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Modal from 'react-modal';
 import "../background.css";
@@ -23,6 +23,11 @@ const Gallery = () => {
   };
 
   const images = activeTab === 'flower' ? flower : activeTab === 'characters' ? characters : others;
+
+
+  useEffect(() => {
+    document.title = "GALLERY | MYUMASE";
+}, []);
 
 
   return (

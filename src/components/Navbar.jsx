@@ -49,23 +49,23 @@ const Navbar = () => {
 
       {/* Mobile Menu (slides down/up based on isOpen) */}
       <div
-        className={`md:hidden bg-transparent fixed top-0 left-0 w-full backdrop-blur-lg text-white transform ${isOpen ? "translate-y-0" : "-translate-y-full"} transition-transform duration-300 ease-in-out`}
+        className={`md:hidden bg-transparent fixed top-0 left-0 w-full backdrop-blur-lg font-bold text-black transform ${isOpen ? "translate-y-0" : "-translate-y-full"} transition-transform duration-300 ease-in-out`}
         style={{ zIndex: -1 }}
       >
         <div className="flex flex-col items-center space-y-2 px-2 py-4 mt-8">
-            <Link to="/" className="hover:text-white" style={{
+            <Link to="/" style={{
                   "fontFamily":  'Katibeh, serif' 
                 }}>HOME</Link>
-            <Link to="/about" className="hover:text-gray-300 mb-2" style={{
+            <Link to="/about" className="mb-2" style={{
                   "fontFamily":  'Katibeh, serif' 
                 }}>ABOUT</Link>
-            <Link to="/work" className="hover:text-gray-300 mb-2" style={{
+            <Link to="/work" className="mb-2" style={{
                   "fontFamily":  'Katibeh, serif' 
                 }}>WORK</Link>
-            <Link to="/gallery" className="hover:text-gray-300 mb-2" style={{
+            <Link to="/gallery" className="mb-2" style={{
                   "fontFamily":  'Katibeh, serif' 
                 }}>GALLERY</Link>
-            <a href="https://myu12.base.ec/" target='_blank' className="hover:text-gray-300" style={{
+            <a href="https://myu12.base.ec/" target='_blank' style={{
                   "fontFamily":  'Katibeh, serif' 
                 }}>SHOP</a>
         </div>

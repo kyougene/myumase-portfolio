@@ -1,0 +1,94 @@
+[
+    {
+      "id": 1,
+      "title": "Kyoto",
+      "images": [
+        "/work/Kyoto/work1.jpg",
+        "/work/Kyoto/work2.jpg",
+        "/work/Kyoto/work3.jpg",
+        "/work/Kyoto/work4.jpeg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Logo",
+      "images": [
+        "/work/Logo/work1.jpg",
+        "/work/Logo/work2.jpg",
+        "/work/Logo/work3.png",
+        "/work/Logo/work4.jpeg",
+        "/work/Logo/work5.jpeg",
+        "/work/Logo/work6.jpg"
+      ]
+    },
+    {
+        "id": 3,
+        "title": "Luna",
+        "images": [
+          "/work/Luna/work1.jpg",
+          "/work/Luna/work2.jpeg",
+          "/work/Luna/work3.jpeg",
+          "/work/Luna/work4.jpeg"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Luna Cafe",
+        "images": [
+            "/work/LunaCafe/work1.jpg",
+            "/work/LunaCafe/work2.jpeg",
+            "/work/LunaCafe/work3.jpeg",
+            "/work/LunaCafe/work4.jpeg"
+          ]
+      },
+      {
+        "id": 5,
+        "title": "Mansion",
+        "images": [
+          "/work/Mansion/work1.jpeg",
+          "/work/Mansion/work2.jpeg",
+          "/work/Mansion/work3.jpeg"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Nagoya Marriott",
+        "images": [
+          "/work/NagoyaMarriott/work1.jpg",
+          "/work/NagoyaMarriott/work2.jpg",
+          "/work/NagoyaMarriott/work3.jpg"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Okinawa",
+        "images": [
+          "/work/Okinawa/work1.jpg",
+          "/work/Okinawa/work2.jpeg",
+          "/work/Okinawa/work3.jpeg",
+          "/work/Okinawa/work4.jpeg"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Package Design",
+        "images": [
+          "/work/PackageDesign/work1.jpg",
+          "/work/PackageDesign/work2.jpg",
+          "/work/PackageDesign/work3.jpeg",
+          "/work/PackageDesign/work4.jpeg",
+          "/work/PackageDesign/work5.jpeg"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Promenade Package",
+        "images": [
+          "/work/PromenadePackage/work1.jpeg",
+          "/work/PromenadePackage/work2.jpg",
+          "/work/PromenadePackage/work3.jpg",
+          "/work/PromenadePackage/work4.jpg",
+          "/work/PromenadePackage/work5.jpg"
+        ]
+      }
+  ]

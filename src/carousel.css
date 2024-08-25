@@ -1,0 +1,13 @@
+.carousel .control-arrow {
+    background: transparent !important; /* Remove background color */
+    border: none; /* Remove any border, if present */
+  }
+  
+  .carousel .control-arrow:hover {
+    background: transparent !important; /* Optional: Add a hover effect */
+  }
+  
+  .carousel .control-arrow:before {
+    color: white; /* Ensure the arrow itself is visible */
+    font-size: 24px; /* Adjust size if necessary */
+  }

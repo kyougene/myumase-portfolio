@@ -1,7 +1,32 @@
 [
+  {
+    "title": "Harajuku NewMake",
+    "images": [
+      "/work/Harajuku/work1.jpg",
+      "/work/Harajuku/work2.jpg",
+      "/work/Harajuku/work3.jpg",
+      "/work/Harajuku/work4.jpg",
+      "/work/Harajuku/work5.jpg"
+    ]
+  },
+  {
+    "title": "Apparel Design",
+    "images": [
+      "/work/Apparel/work1.jpg",
+      "/work/Apparel/work2.jpg",
+      "/work/Apparel/work3.jpg",
+      "/work/Apparel/work7.jpg",
+      "/work/Apparel/work4.jpg",
+      "/work/Apparel/work5.jpg",
+      "/work/Apparel/work6.jpg",
+      "/work/Apparel/work8.jpg",
+      "/work/Apparel/work9.jpg",
+      "/work/Apparel/work10.jpg",
+      "/work/Apparel/work11.jpg"
+    ]
+  },
     {
-      "id": 1,
-      "title": "Kyoto",
+      "title": "Kyoto Wall Art",
       "images": [
         "/work/Kyoto/work1.jpg",
         "/work/Kyoto/work2.jpg",
@@ -10,8 +35,7 @@
       ]
     },
     {
-      "id": 2,
-      "title": "Logo",
+      "title": "Logo Design",
       "images": [
         "/work/Logo/work1.jpg",
         "/work/Logo/work2.jpg",
@@ -22,8 +46,7 @@
       ]
     },
     {
-        "id": 3,
-        "title": "Luna",
+        "title": "Luna Shin-Okubo Entrance",
         "images": [
           "/work/Luna/work1.jpg",
           "/work/Luna/work2.jpeg",
@@ -32,7 +55,6 @@
         ]
       },
       {
-        "id": 4,
         "title": "Luna Cafe",
         "images": [
             "/work/LunaCafe/work1.jpg",
@@ -42,8 +64,7 @@
           ]
       },
       {
-        "id": 5,
-        "title": "Mansion",
+        "title": "Interior Art Work",
         "images": [
           "/work/Mansion/work1.jpeg",
           "/work/Mansion/work2.jpeg",
@@ -51,8 +72,7 @@
         ]
       },
       {
-        "id": 6,
-        "title": "Nagoya Marriott",
+        "title": "Nagoya Marriott Associa Hotel",
         "images": [
           "/work/NagoyaMarriott/work1.jpg",
           "/work/NagoyaMarriott/work2.jpg",
@@ -60,8 +80,7 @@
         ]
       },
       {
-        "id": 7,
-        "title": "Okinawa",
+        "title": "Okinawa Niraikanai",
         "images": [
           "/work/Okinawa/work1.jpg",
           "/work/Okinawa/work2.jpeg",
@@ -70,8 +89,7 @@
         ]
       },
       {
-        "id": 8,
-        "title": "Package Design",
+        "title": "Package Designs",
         "images": [
           "/work/PackageDesign/work1.jpg",
           "/work/PackageDesign/work2.jpg",
@@ -81,8 +99,7 @@
         ]
       },
       {
-        "id": 9,
-        "title": "Promenade Package",
+        "title": "Patisserie Promenade",
         "images": [
           "/work/PromenadePackage/work1.jpeg",
           "/work/PromenadePackage/work2.jpg",

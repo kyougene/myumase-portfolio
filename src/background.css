@@ -6,7 +6,8 @@ html, body {
     background-image: url('/hero/background.jpg');
     background-size: cover;
     background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   /* Optional: Keeps the background fixed while scrolling */
-  }
+    background-repeat: repeat;
+    /* background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+}

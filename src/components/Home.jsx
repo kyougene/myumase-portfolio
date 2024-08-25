@@ -2,22 +2,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Navbar from "./Navbar";
+import { hero } from "../data/hero";
 
 const Home = () => {
-    // const images = [
-    //     "./flower/flower11.jpg",
-    //     "./flower/flower12.jpg",
-    //     "./hero/hero1.jpg",
-    //     "./hero/hero3.jpg",
-    //     "./hero/hero13.jpg",
-    // ];
-
-    const images = [
-        "/work/LunaCafe/work1.jpg",
-        "/work/LunaCafe/work2.jpeg",
-        "/work/LunaCafe/work3.jpeg",
-        "/work/LunaCafe/work4.jpeg"
-      ];
 
     const settings = {
         infinite: true,
@@ -25,7 +12,7 @@ const Home = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 2500,
         pauseOnHover: false,
         arrows: false
     };
@@ -34,7 +21,7 @@ const Home = () => {
         <>
             <Navbar />
             <Slider {...settings} className="w-[100vw] h-[100vh]">
-                {images.map((image, index) => (
+                {hero.map((image, index) => (
                     <div key={index} className="relative">
                         <div
                             className="w-screen h-screen bg-cover bg-center"

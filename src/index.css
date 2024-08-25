@@ -7,3 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* index.css or fonts.css */
+@font-face {
+  font-family: 'Katibeh';
+  src: url('/assets/fonts/Katibeh/Katibeh-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -7,16 +7,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* index.css */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url('/hero/background.jpg');
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
- /* Optional: Keeps the background fixed while scrolling */
-}

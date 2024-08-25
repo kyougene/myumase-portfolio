@@ -1,4 +1,6 @@
 import Navbar from './Navbar';
+import "../background.css"
+
 
 const About = () => {
   return (

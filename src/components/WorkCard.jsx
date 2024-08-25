@@ -18,11 +18,15 @@ const WorkCard = ({ images, title }) => {
   const closeModal = () => setIsOpen(false);
 
   return (
-    <div className="flex flex-col items-center max-w-sm mx-auto rounded overflow-hidden"> {/* Center WorkCard */}
+    <div className="w-full md:w-auto max-w-sm mx-auto rounded overflow-hidden"> {/* Ensure full width on mobile */}
       <Carousel showThumbs={false} showStatus={false}>
         {images.map((image, index) => (
           <div key={index} onClick={() => openModal(index)}>
-            <img className="w-full h-64 object-cover cursor-pointer" src={image} alt={`${title} ${index + 1}`} />
+            <img
+              className="w-full h-64 object-cover cursor-pointer"
+              src={image}
+              alt={`${title} ${index + 1}`}
+            />
           </div>
         ))}
       </Carousel>
@@ -35,7 +39,7 @@ const WorkCard = ({ images, title }) => {
         isOpen={isOpen}
         onRequestClose={closeModal}
         contentLabel="Image Carousel"
-        className="w-full max-w-4xl mx-auto mt-20 p-0 rounded-lg bg-transparent"
+        className="w-full flex justify-center max-w-4xl mx-auto mt-20 p-0 rounded-lg bg-transparent"
         overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
       >
         <div className="relative w-full max-w-[90vw] max-h-[90vh] flex justify-center items-center">
@@ -49,7 +53,7 @@ const WorkCard = ({ images, title }) => {
             selectedItem={selectedImageIndex}
             showThumbs={false}
             showStatus={false}
-            className="w-full h-full"
+            className="w-[90vw] h-full"
           >
             {images.map((image, index) => (
               <div key={index} className="w-full h-[60vh] flex justify-center items-center">

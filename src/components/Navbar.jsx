@@ -68,6 +68,9 @@ const Navbar = () => {
             <a href="https://myu12.base.ec/" target='_blank' style={{
                   "fontFamily":  'Katibeh, serif' 
                 }}>SHOP</a>
+                    <a href="https://www.instagram.com/myumase/" target='_blank'>
+              <img src={instagram} alt="instagram logo" />
+            </a>
         </div>
       </div>
     </nav>

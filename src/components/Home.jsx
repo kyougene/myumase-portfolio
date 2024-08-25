@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <Slider {...settings} className="w-[100vw] h-[100vh]">
+            <Slider {...settings} className="w-[100vw] h-[100vh] overflow-hidden">
                 {hero.map((image, index) => (
                     <div key={index} className="relative">
                         <div

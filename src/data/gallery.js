@@ -1,6 +1,6 @@
 export const flower = [
-  "/flower/flower23.jpg",
-    "/flower/flower1.jpg",
+    "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/flower/flower23.jpg",
+    "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/flower/flower1.jpg",
     "/flower/flower2.jpg",
     "/flower/flower3.jpg",
     "/flower/flower4.jpg",
@@ -26,18 +26,18 @@ export const flower = [
   ]
 
 export const characters = [
-  "/characters/character4.jpg",
-  "/characters/character5.jpg",
-  "/characters/character11.jpg",
-  "/characters/character2.jpg",
-  "/characters/character8.jpg",
-  "/characters/character9.jpg",
-  "/characters/character12.jpeg",
-  "/characters/character13.jpg",
-  "/characters/character3.jpg",
-  "/characters/character6.jpg",
-  "/characters/character7.jpg",
-  "/characters/character10.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character4.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character5.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character11.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character2.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character8.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character9.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character12.jpeg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character13.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character3.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character6.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character7.jpg",
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/characters/character10.jpg",
 ]
 
 export const others = [

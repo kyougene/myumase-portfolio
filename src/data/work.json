@@ -2,110 +2,110 @@
   {
     "title": "Harajuku NewMake",
     "images": [
-      "/work/Harajuku/work1.jpg",
-      "/work/Harajuku/work2.jpg",
-      "/work/Harajuku/work3.jpg",
-      "/work/Harajuku/work4.jpg",
-      "/work/Harajuku/work5.jpg"
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/harajuku/work1.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/harajuku/work2.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/harajuku/work3.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/harajuku/work4.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/harajuku/work5.jpg"
     ]
   },
   {
     "title": "Apparel Design",
     "images": [
-      "/work/Apparel/work1.jpg",
-      "/work/Apparel/work2.jpg",
-      "/work/Apparel/work3.jpg",
-      "/work/Apparel/work7.jpg",
-      "/work/Apparel/work4.jpg",
-      "/work/Apparel/work5.jpg",
-      "/work/Apparel/work6.jpg",
-      "/work/Apparel/work8.jpg",
-      "/work/Apparel/work9.jpg",
-      "/work/Apparel/work10.jpg",
-      "/work/Apparel/work11.jpg"
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work1.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work2.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work3.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work7.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work4.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work5.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work6.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work8.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work9.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work10.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work11.jpg"
     ]
   },
     {
       "title": "Kyoto Wall Art",
       "images": [
-        "/work/Kyoto/work1.jpg",
-        "/work/Kyoto/work2.jpg",
-        "/work/Kyoto/work3.jpg",
-        "/work/Kyoto/work4.jpeg"
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/kyoto/work1.jpg",
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/kyoto/work2.jpg",
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/kyoto/work3.jpg",
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/kyoto/work4.jpeg"
       ]
     },
     {
       "title": "Logo Design",
       "images": [
-        "/work/Logo/work1.jpg",
-        "/work/Logo/work2.jpg",
-        "/work/Logo/work3.png",
-        "/work/Logo/work4.jpeg",
-        "/work/Logo/work5.jpeg",
-        "/work/Logo/work6.jpg"
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/logo/work1.jpg",
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/logo/work2.jpg",
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/logo/work3.png",
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/logo/work4.jpeg",
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/logo/work5.jpeg",
+        "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/logo/work6.jpg"
       ]
     },
     {
         "title": "Luna Shin-Okubo Entrance",
         "images": [
-          "/work/Luna/work1.jpg",
-          "/work/Luna/work2.jpeg",
-          "/work/Luna/work3.jpeg",
-          "/work/Luna/work4.jpeg"
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna/work1.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna/work2.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna/work3.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna/work4.jpeg"
         ]
       },
       {
         "title": "Luna Cafe",
         "images": [
-            "/work/LunaCafe/work1.jpg",
-            "/work/LunaCafe/work2.jpeg",
-            "/work/LunaCafe/work3.jpeg",
-            "/work/LunaCafe/work4.jpeg"
-          ]
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna-cafe/work1.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna-cafe/work2.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna-cafe/work3.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna-cafe/work4.jpeg"
+        ]
       },
       {
         "title": "Interior Art Work",
         "images": [
-          "/work/Mansion/work1.jpeg",
-          "/work/Mansion/work2.jpeg",
-          "/work/Mansion/work3.jpeg"
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/mansion/work1.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/mansion/work2.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/mansion/work3.jpeg"
         ]
       },
       {
         "title": "Nagoya Marriott Associa Hotel",
         "images": [
-          "/work/NagoyaMarriott/work1.jpg",
-          "/work/NagoyaMarriott/work2.jpg",
-          "/work/NagoyaMarriott/work3.jpg"
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/nagoya-marriott/work1.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/nagoya-marriott/work2.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/nagoya-marriott/work3.jpg"
         ]
       },
       {
         "title": "Okinawa Niraikanai",
         "images": [
-          "/work/Okinawa/work1.jpg",
-          "/work/Okinawa/work2.jpeg",
-          "/work/Okinawa/work3.jpeg",
-          "/work/Okinawa/work4.jpeg"
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/okinawa/work1.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/okinawa/work2.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/okinawa/work3.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/okinawa/work4.jpeg"
         ]
       },
       {
         "title": "Package Designs",
         "images": [
-          "/work/PackageDesign/work1.jpg",
-          "/work/PackageDesign/work2.jpg",
-          "/work/PackageDesign/work3.jpeg",
-          "/work/PackageDesign/work4.jpeg",
-          "/work/PackageDesign/work5.jpeg"
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/package-design/work1.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/package-design/work2.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/package-design/work3.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/package-design/work4.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/package-design/work5.jpeg"
         ]
       },
       {
         "title": "Patisserie Promenade",
         "images": [
-          "/work/PromenadePackage/work1.jpeg",
-          "/work/PromenadePackage/work2.jpg",
-          "/work/PromenadePackage/work3.jpg",
-          "/work/PromenadePackage/work4.jpg",
-          "/work/PromenadePackage/work5.jpg"
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/patisserie-promenade/work1.jpeg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/patisserie-promenade/work2.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/patisserie-promenade/work3.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/patisserie-promenade/work4.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/patisserie-promenade/work5.jpg"
         ]
       }
   ]

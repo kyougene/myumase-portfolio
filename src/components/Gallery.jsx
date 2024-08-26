@@ -11,6 +11,7 @@ const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeTab, setActiveTab] = useState('flower'); // Default tab is 'flower'
+  const [loading, setLoading] = useState(true);
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -22,62 +23,80 @@ const Gallery = () => {
     setSelectedImage(null);
   };
 
-  const images = activeTab === 'flower' ? flower : activeTab === 'characters' ? characters : others;
+  const handleTabChange = (tab) => {
+    setLoading(true);  // Show loading animation
+    setTimeout(() => {
+      setActiveTab(tab);
+      setLoading(false); // Hide loading animation after 1 second
+    }, 1000);
+  };
 
+  const images = activeTab === 'flower' ? flower : activeTab === 'characters' ? characters : others;
 
   useEffect(() => {
     document.title = "GALLERY | MYUMASE";
-}, []);
+  }, []);
 
+  useEffect(() => {
+    // Simulate a delay for initial loading
+    setTimeout(() => {
+      setLoading(false); // Hide loading animation after initial load
+    }, 1000);
+  }, []); // Empty dependency array ensures this runs once on mount
 
   return (
     <>
       <Navbar />
-      <div className="container lg:w-[80vw] mx-auto px-4 pt-24 pb-8">
+      <div className="container lg:w-[80vw] mx-auto px-4 pt-24 pb-8 min-h-screen"> {/* Set min-h-screen */}
         <h1 className="text-4xl font-bold mb-8 text-center" style={{
-          "fontFamily":  'Katibeh, serif' 
+          fontFamily: 'Katibeh, serif'
         }}>GALLERY</h1>
         <div className="flex justify-center mb-8">
           <button
             className={`px-4 py-2 mx-2 rounded ${activeTab === 'flower' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
-            onClick={() => setActiveTab('flower')} style={{
-              "fontFamily":  'Katibeh, serif' 
-            }}
+            onClick={() => handleTabChange('flower')}
+            style={{ fontFamily: 'Katibeh, serif' }}
           >
             FLOWERS
           </button>
           <button
             className={`px-4 py-2 mx-2 rounded ${activeTab === 'characters' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
-            onClick={() => setActiveTab('characters')} style={{
-              "fontFamily":  'Katibeh, serif' 
-            }}
+            onClick={() => handleTabChange('characters')}
+            style={{ fontFamily: 'Katibeh, serif' }}
           >
             CHARACTERS
-          </button> <button
+          </button>
+          <button
             className={`px-4 py-2 mx-2 rounded ${activeTab === 'others' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
-            onClick={() => setActiveTab('others')} style={{
-              "fontFamily":  'Katibeh, serif' 
-            }}
+            onClick={() => handleTabChange('others')}
+            style={{ fontFamily: 'Katibeh, serif' }}
           >
             OTHERS
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-          {images.map((item, index) => (
-            <div 
-              key={index} 
-              className="overflow-hidden rounded-lg cursor-pointer"
-              onClick={() => openModal(item)}  // Open modal with selected image
-            >
-              <img 
-                src={item} 
-                alt={`Gallery image ${index + 1}`} 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
-        </div>
+        {/* Loading Animation */}
+        {loading ? (
+          <div className="flex justify-center items-center h-64">
+            <div className="loader"></div> {/* Add CSS for the loader */}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {images.map((item, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-lg cursor-pointer"
+                onClick={() => openModal(item)}  // Open modal with selected image
+              >
+                <img
+                  src={item}
+                  alt={`Gallery image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Modal */}

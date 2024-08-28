@@ -18,12 +18,12 @@ const WorkCard = ({ images, title }) => {
   const closeModal = () => setIsOpen(false);
 
   return (
-    <div className="w-full md:w-auto max-w-sm mx-auto rounded overflow-hidden"> {/* Ensure full width on mobile */}
+    <div className="w-full md:w-auto max-w-[95%] mx-auto rounded overflow-hidden"> {/* Ensure full width on mobile */}
       <Carousel showThumbs={false} showStatus={false}>
         {images.map((image, index) => (
           <div key={index} onClick={() => openModal(index)} className='w-full cursor-pointer'>
             <img
-              className="w-full h-64 object-cover "
+              className="w-full h-72 object-cover"
               src={image}
               alt={`${title} ${index + 1}`}
             />

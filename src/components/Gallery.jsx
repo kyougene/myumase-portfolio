@@ -25,8 +25,8 @@ const Gallery = () => {
 
   const handleTabChange = (tab) => {
     setLoading(true);  // Show loading animation
+    setActiveTab(tab);
     setTimeout(() => {
-      setActiveTab(tab);
       setLoading(false); // Hide loading animation after 1 second
     }, 1000);
   };

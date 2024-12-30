@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Modal from 'react-modal';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Carousel CSS
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../carousel.css';
 
-Modal.setAppElement('#root'); // Set the root element for accessibility
+Modal.setAppElement('#root');
 
 const WorkCard = ({ images, title }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0); // State to track the clicked image
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const openModal = (index) => {
     setSelectedImageIndex(index);
@@ -18,7 +18,7 @@ const WorkCard = ({ images, title }) => {
   const closeModal = () => setIsOpen(false);
 
   return (
-    <div className="w-full md:w-auto max-w-[95%] mx-auto rounded overflow-hidden"> {/* Ensure full width on mobile */}
+    <div className="w-full md:w-auto max-w-[95%] mx-auto rounded overflow-hidden">
       <Carousel showThumbs={false} showStatus={false}>
         {images.map((image, index) => (
           <div key={index} onClick={() => openModal(index)} className='w-full cursor-pointer'>

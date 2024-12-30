@@ -3,6 +3,30 @@ import Navbar from './Navbar';
 import "../background.css";
 import Footer from './Footer';
 
+const activities = [
+  "2024年 JR上野駅仮囲いアートイベント",
+  "2024年 First solo exhibition 表参道",
+  "2024年 NYC・Creston 壁画 ライブペイント",
+  "2023年 名古屋・マリオットホテル 金魚の舞 ロビーアート作品デザイン",
+  "2023年 浅草・ホテルKANZASHI パッケージデザイン",
+  "2023年 Los Angeles 留学",
+  "2023年 宮城県・Patisserie Promenade バレンタインボックスデザイン",
+  "2023年 NY留学",
+  "2022年 静岡県・S1 shop 自販機デザイン",
+  "2022年 ロサンゼルス・The inconvenience store にてオリジナルTシャツ販売",
+  "2022年 宮城県・Patisserie Promenade ロゴデザイン、パッケージデザイン",
+  "2022年 沖縄渡嘉敷島・ペンションニライカナイ 壁画",
+  "2022年 表参道・NewMake Labo ライブペインティング イベント開催",
+  "2022年 新大久保・韓国食堂&カフェLuna カフェ店内壁画",
+  "2021年 新大久保・韓国食堂&カフェLuna 階段壁画",
+  "2020年 Under Water Creator ロゴデザイン",
+  "2020年 小笠原諸島オリジナルマスクデザイン",
+  "2020年 コロナ禍でオリジナルマスク販売、結婚式サイトハナユメに掲載",
+  "2020年 台湾エステ会社Bonjomayの化粧品パッケージデザイン",
+  "2019年 第46回近代日本美術協会展に入選",
+  "2016年 自己流で絵を描き始める"
+]
+
 const About = () => {
 
   useEffect(() => {
@@ -42,27 +66,9 @@ const About = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Activity</h3>
             <ul className="space-y-2 text-gray-800 list-none">
-              <li>2024年 JR上野駅仮囲いアートイベント</li>
-              <li>2024年 First solo exhibition 表参道</li>
-              <li>2024年 NYC・Creston 壁画 ライブペイント</li>
-              <li>2023年 名古屋・マリオットホテル 金魚の舞 ロビーアート作品デザイン</li>
-              <li>2023年 浅草・ホテルKANZASHI パッケージデザイン</li>
-              <li>2023年 Los Angeles 留学</li>
-              <li>2023年 宮城県・Patisserie Promenade バレンタインボックスデザイン</li>
-              <li>2023年 NY留学</li>
-              <li>2022年 静岡県・S1 shop 自販機デザイン</li>
-              <li>2022年 ロサンゼルス・The inconvenience store にてオリジナルTシャツ販売</li>
-              <li>2022年 宮城県・Patisserie Promenade ロゴデザイン、パッケージデザイン</li>
-              <li>2022年 沖縄渡嘉敷島・ペンションニライカナイ 壁画</li>
-              <li>2022年 表参道・NewMake Labo ライブペインティング イベント開催</li>
-              <li>2022年 新大久保・韓国食堂&カフェLuna カフェ店内壁画</li>
-              <li>2021年 新大久保・韓国食堂&カフェLuna 階段壁画</li>
-              <li>2020年 Under Water Creator ロゴデザイン</li>
-              <li>2020年 小笠原諸島オリジナルマスクデザイン</li>
-              <li>2020年 コロナ禍でオリジナルマスク販売、結婚式サイトハナユメに掲載</li>
-              <li>2020年 台湾エステ会社Bonjomayの化粧品パッケージデザイン</li>
-              <li>2019年 第46回近代日本美術協会展に入選</li>
-              <li>2016年 自己流で絵を描き始める</li>
+              {activities.map(acitvity => {
+                <li>{acitvity}</li>
+              })}
             </ul>
           </div>
         </div>

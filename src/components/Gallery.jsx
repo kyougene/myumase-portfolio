@@ -24,11 +24,11 @@ const Gallery = () => {
   };
 
   const handleTabChange = (tab) => {
-    setLoading(true);  // Show loading animation
+    setLoading(true); 
     setActiveTab(tab);
     setTimeout(() => {
-      setLoading(false); // Hide loading animation after 1 second
-    }, 1000);
+      setLoading(false); 
+    }, 2000);
   };
 
   const images = activeTab === 'flower' ? flower : activeTab === 'characters' ? characters : others;
@@ -38,16 +38,15 @@ const Gallery = () => {
   }, []);
 
   useEffect(() => {
-    // Simulate a delay for initial loading
     setTimeout(() => {
-      setLoading(false); // Hide loading animation after initial load
+      setLoading(false);
     }, 1000);
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []);
 
   return (
     <>
       <Navbar />
-      <div className="container lg:w-[80vw] mx-auto px-4 pt-24 pb-8 min-h-screen"> {/* Set min-h-screen */}
+      <div className="container lg:w-[80vw] mx-auto px-4 pt-24 pb-8 min-h-screen">
         <h1 className="text-4xl font-bold mb-8 text-center" style={{
           fontFamily: 'Katibeh, serif'
         }}>GALLERY</h1>
@@ -78,7 +77,7 @@ const Gallery = () => {
         {/* Loading Animation */}
         {loading ? (
           <div className="flex justify-center items-center h-64">
-            <div className="loader"></div> {/* Add CSS for the loader */}
+            <div className="loader"></div>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
@@ -86,7 +85,7 @@ const Gallery = () => {
               <div
                 key={index}
                 className="overflow-hidden rounded-lg cursor-pointer"
-                onClick={() => openModal(item)}  // Open modal with selected image
+                onClick={() => openModal(item)}
               >
                 <img
                   src={item}
@@ -110,7 +109,7 @@ const Gallery = () => {
         <div className="relative w-full max-w-[90vw] max-h-[90vh] flex justify-center items-center p-4">
           <button
             onClick={closeModal}
-            className="absolute top-4 right-4 z-20 text-white text-3xl font-bold"  // Use z-20 to ensure it’s above the image
+            className="absolute top-4 right-4 z-20 text-white text-3xl font-bold"
           >
             &times;
           </button>
@@ -118,7 +117,7 @@ const Gallery = () => {
             <img
               src={selectedImage}
               alt="Selected"
-              className="object-contain w-full max-h-[75vh]"  // Ensures image fits within modal
+              className="object-contain w-full max-h-[75vh]"
             />
           )}
         </div>

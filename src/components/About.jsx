@@ -67,7 +67,7 @@ const About = () => {
             <h3 className="text-xl font-semibold mb-4">Activity</h3>
             <ul className="space-y-2 text-gray-800 list-none">
               {activities.map(acitvity => {
-                <li>{acitvity}</li>
+                return <li>{acitvity}</li>
               })}
             </ul>
           </div>

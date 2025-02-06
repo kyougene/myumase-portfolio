@@ -3,13 +3,20 @@ import WorkCard from './WorkCard';
 import data from "../data/work.json";
 import "../background.css";
 import Footer from './Footer';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Work = () => {
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     document.title = "WORKS | MYUMASE";
 }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
 
 
   return (
@@ -19,17 +26,24 @@ const Work = () => {
         <h1 className="text-4xl font-bold mb-8 text-center" style={{
               "fontFamily":  'Katibeh, serif' 
             }}>Works</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">  {/* Adjusted grid settings */}
-          {data.map((work, index) => (
-            <WorkCard
-              key={index}
-              images={work.images}
-              title={work.title}
-            />
-          ))}
-        </div>
-      </div>
+            {loading ? (
+                  <div className="flex justify-center items-center h-64">
+                    <div className="loader"></div>
+                  </div>
+            ): (<>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">  {/* Adjusted grid settings */}
+            {data.map((work, index) => (
+              <WorkCard
+                key={index}
+                images={work.images}
+                title={work.title}
+              />
+            ))}
+            </div>
       <Footer />
+            </>
+        )}
+      </div>
     </>
   );
 };

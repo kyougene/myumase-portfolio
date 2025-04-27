@@ -25,7 +25,7 @@ const Navbar = () => {
             }}>ABOUT</Link>
           <Link to="/work" className="hover:text-white" style={{
               "fontFamily":  'Katibeh, serif' 
-            }}>WORK</Link>
+            }}>WORKS</Link>
           <Link to="/gallery" className="hover:text-white" style={{
               "fontFamily":  'Katibeh, serif' 
             }}>GALLERY</Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 }}>ABOUT</Link>
             <Link to="/work" className="mb-2" style={{
                   "fontFamily":  'Katibeh, serif' 
-                }}>WORK</Link>
+                }}>WORKS</Link>
             <Link to="/gallery" className="mb-2" style={{
                   "fontFamily":  'Katibeh, serif' 
                 }}>GALLERY</Link>

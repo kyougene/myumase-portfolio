@@ -6,7 +6,7 @@ import Footer from './Footer';
 const activities = [
   "2024年 Narita International Airport 壁画",
   "2024年 JR上野駅仮囲いアートイベント",
-  "2024年 First solo exhibition 表参道",
+  "2024年 First Solo Exhibition 表参道",
   "2024年 NYC・Creston 壁画 ライブペイント",
   "2023年 名古屋・マリオットホテル 金魚の舞 ロビーアート作品デザイン",
   "2023年 浅草・ホテルKANZASHI パッケージデザイン",
@@ -14,7 +14,7 @@ const activities = [
   "2023年 宮城県・Patisserie Promenade バレンタインボックスデザイン",
   "2023年 NY留学",
   "2022年 静岡県・S1 shop 自販機デザイン",
-  "2022年 ロサンゼルス・The inconvenience store にてオリジナルTシャツ販売",
+  "2022年 ロサンゼルス・The Inconvenience Store にてオリジナルTシャツ販売",
   "2022年 宮城県・Patisserie Promenade ロゴデザイン、パッケージデザイン",
   "2022年 沖縄渡嘉敷島・ペンションニライカナイ 壁画",
   "2022年 表参道・NewMake Labo ライブペインティング イベント開催",

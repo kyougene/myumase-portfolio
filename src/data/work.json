@@ -84,10 +84,10 @@
   {
     "title": "Apparel Design",
     "images": [
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work1.jpg",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/IMG_0902.JPG",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/IMG_0904.JPG",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/IMG_0907.JPG",
-      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work1.jpg",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work2.jpg",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work3.jpg",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work7.jpg",
@@ -143,6 +143,7 @@
         "images": [
           "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/vending-machine/B9DF3C7C-FF3A-432F-8F3F-13ADA090F7F2.jpg",
           "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/vending-machine/F86B7D88-1FE9-4FCF-A3DD-DBAEAD492D61.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/vending-machine/IMG_4757.PNG",
           "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/vending-machine/B03B7B53-7646-4581-B6D3-603CCCDBF3F2.jpg"
         ]
       },

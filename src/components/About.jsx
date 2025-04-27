@@ -4,6 +4,7 @@ import "../background.css";
 import Footer from './Footer';
 
 const activities = [
+  "2024年 Narita International Airport 壁画",
   "2024年 JR上野駅仮囲いアートイベント",
   "2024年 First solo exhibition 表参道",
   "2024年 NYC・Creston 壁画 ライブペイント",

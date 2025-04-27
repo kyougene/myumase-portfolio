@@ -14,6 +14,21 @@
     ]
   },
   {
+    "title": "Narita International Airport",
+    "images": [
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4504.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4523.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4512.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4544.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4568.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4572.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4575.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4542.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4538.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/narita/IMG_4579.JPG"
+    ]
+  },
+  {
     "title": "Ueno Station Wall Art",
     "images":[
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/ueno-station/IMG_6752.jpg",
@@ -47,6 +62,16 @@
     ]
   },
   {
+    "title": "Asakusa Kanzashi Hotel",
+    "images": [
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/asakusa-kanzashi-hotel/IMG_3985.jpeg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/asakusa-kanzashi-hotel/IMG_4307.jpeg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/asakusa-kanzashi-hotel/IMG_4312.jpeg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/asakusa-kanzashi-hotel/D8D27BB3-9565-46A7-9F54-A800EBE24E9D.jpg",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/asakusa-kanzashi-hotel/IMG_3971.JPG"
+    ]
+  },
+  {
     "title": "Harajuku NewMake",
     "images": [
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/harajuku/work1.jpg",
@@ -59,6 +84,9 @@
   {
     "title": "Apparel Design",
     "images": [
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/IMG_0902.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/IMG_0904.JPG",
+      "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/IMG_0907.JPG",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work1.jpg",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work2.jpg",
       "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/apparel/work3.jpg",
@@ -108,6 +136,14 @@
           "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna-cafe/work2.jpeg",
           "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna-cafe/work3.jpeg",
           "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/luna-cafe/work4.jpeg"
+        ]
+      },
+      {
+        "title": "Vending Machine Design",
+        "images": [
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/vending-machine/B9DF3C7C-FF3A-432F-8F3F-13ADA090F7F2.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/vending-machine/F86B7D88-1FE9-4FCF-A3DD-DBAEAD492D61.jpg",
+          "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/work/vending-machine/B03B7B53-7646-4581-B6D3-603CCCDBF3F2.jpg"
         ]
       },
       {

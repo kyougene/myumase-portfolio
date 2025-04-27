@@ -41,6 +41,7 @@ export const characters = [
 ]
 
 export const others = [
+  "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/others/surf.jpg",
   "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/others/other15.jpg",
   "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/others/other2.jpg",
   "https://myumase-portfolio.sgp1.cdn.digitaloceanspaces.com/others/other3.jpg",

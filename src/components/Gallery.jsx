@@ -1,54 +1,55 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
-import Modal from 'react-modal';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import "../background.css";
 import { flower, others, characters } from "../data/gallery";
 import Footer from "./Footer";
 
-Modal.setAppElement('#root'); // Set the root element for accessibility
+const LazyImage = ({ src, alt, className, onClick }) => {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <div className={`${className} bg-gray-200`} onClick={onClick}>
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        onLoad={() => setLoaded(true)}
+        className={`w-full h-full object-cover transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+      />
+    </div>
+  );
+};
 
 const Gallery = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [activeTab, setActiveTab] = useState('flower'); // Default tab is 'flower'
-  const [loading, setLoading] = useState(true);
-
-  const openModal = (image) => {
-    setSelectedImage(image);
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-    setSelectedImage(null);
-  };
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [activeTab, setActiveTab] = useState('flower');
 
   const handleTabChange = (tab) => {
-    setLoading(true); 
     setActiveTab(tab);
-    setTimeout(() => {
-      setLoading(false); 
-    }, 2000);
   };
 
   const images = activeTab === 'flower' ? flower : activeTab === 'characters' ? characters : others;
+  const slides = images.map(src => ({ src }));
+
+  const openLightbox = (index) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.title = "GALLERY | MYUMASE";
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
   }, []);
 
   return (
     <>
       <Navbar />
-      <div className="container lg:w-[80vw] mx-auto px-4 pt-24 pb-8 min-h-screen">
+      <div className="container lg:w-[80vw] mx-auto px-4 pt-40 pb-8 min-h-screen">
         <h1 className="text-4xl font-bold mb-8 text-center" style={{
-          fontFamily: 'Katibeh, serif'
+          fontFamily: "'Libre Baskerville', serif"
         }}>GALLERY</h1>
         <div className="flex justify-center mb-8">
           <button
@@ -74,54 +75,29 @@ const Gallery = () => {
           </button>
         </div>
 
-        {/* Loading Animation */}
-        {loading ? (
-          <div className="flex justify-center items-center h-64">
-            <div className="loader"></div>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            {images.map((item, index) => (
-              <div
-                key={index}
-                className="overflow-hidden rounded-lg cursor-pointer"
-                onClick={() => openModal(item)}
-              >
-                <img
-                  src={item}
-                  alt={`Gallery image ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        )}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          {images.map((item, index) => (
+            <LazyImage
+              key={`${activeTab}-${index}`}
+              src={item}
+              alt={`Gallery image ${index + 1}`}
+              className="overflow-hidden rounded-lg cursor-pointer aspect-square"
+              onClick={() => openLightbox(index)}
+            />
+          ))}
+        </div>
       </div>
 
-      {/* Modal */}
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={closeModal}
-        contentLabel="Image Modal"
-        className="w-full max-w-4xl flex justify-center mx-auto mt-20 p-0 rounded-lg bg-transparent"
-        overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
-      >
-        <div className="relative w-full max-w-[90vw] max-h-[90vh] flex justify-center items-center p-4">
-          <button
-            onClick={closeModal}
-            className="absolute top-4 right-4 z-20 text-white text-3xl font-bold"
-          >
-            &times;
-          </button>
-          {selectedImage && (
-            <img
-              src={selectedImage}
-              alt="Selected"
-              className="object-contain w-full max-h-[75vh]"
-            />
-          )}
-        </div>
-      </Modal>
+      <Lightbox
+        open={lightboxOpen}
+        close={() => setLightboxOpen(false)}
+        index={lightboxIndex}
+        slides={slides}
+        styles={{
+          container: { backgroundColor: "rgba(0, 0, 0, 0.6)", backdropFilter: "blur(8px)" },
+        }}
+      />
+
       <Footer />
     </>
   );

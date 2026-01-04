@@ -2,11 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('/hero/background.jpg');
-    background-size: cover;
-    background-position: top center;
-    background-repeat: repeat;
-    /* background-attachment: fixed; */
+    background-color: #E2F0FF;
     display: flex;
     flex-direction: column;
 }

@@ -39,7 +39,7 @@ const About = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="flex-grow pt-40 px-4 md:px-8 mb-12 flex flex-col items-center">
+      <div className="flex-grow pt-24 md:pt-40 px-4 md:px-8 mb-12 flex flex-col items-center">
         <div style={{
               "fontFamily":  'Katibeh, serif'
             }} className="flex flex-col w-full max-w-4xl items-center rounded-lg">

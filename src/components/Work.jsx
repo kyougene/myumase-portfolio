@@ -14,7 +14,7 @@ const Work = () => {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto px-4 pt-40 pb-8">
+      <div className="container mx-auto px-4 pt-24 md:pt-40 pb-8">
         <h1 className="text-4xl font-bold mb-8 text-center" style={{
               fontFamily: "'Libre Baskerville', serif"
             }}>WORKS</h1>

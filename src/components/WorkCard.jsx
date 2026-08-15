@@ -1,10 +1,16 @@
-import { useState } from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import { useRef, useState } from 'react';
+import slick from 'react-slick';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import '../carousel.css';
 import '../background.css';
+
+// react-slick is CommonJS with no `exports` map, and Vite's dep optimizer hands
+// back the module's `exports` object instead of unwrapping `.default`. Normalize
+// it here rather than relying on bundler interop.
+const Slider = slick.default ?? slick;
 
 const LazyImage = ({ src, alt, className }) => {
   const [loaded, setLoaded] = useState(false);
@@ -25,20 +31,43 @@ const LazyImage = ({ src, alt, className }) => {
 const WorkCard = ({ images, title }) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+  // Slick starts dragging on mousedown, so a swipe still ends in a click event.
+  // Remember where the pointer went down and ignore clicks that moved far
+  // enough to count as a drag.
+  const dragOrigin = useRef(null);
 
   // Convert images to lightbox format
   const slides = images.map(src => ({ src }));
 
-  const openLightbox = (index) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  const handleMouseDown = (e) => {
+    dragOrigin.current = { x: e.clientX, y: e.clientY };
+  };
+
+  const openLightbox = (index) => (e) => {
+    const origin = dragOrigin.current;
+    if (origin && Math.hypot(e.clientX - origin.x, e.clientY - origin.y) > 5) return;
     setLightboxIndex(index);
     setLightboxOpen(true);
   };
 
   return (
-    <div className="w-full md:w-auto max-w-[95%] mx-auto rounded overflow-hidden">
-      <Carousel showThumbs={false} showStatus={false}>
+    <div className="w-full md:w-auto max-w-[95%] mx-auto rounded-sm overflow-hidden">
+      <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} onClick={() => openLightbox(index)} className='w-full cursor-pointer'>
+          <div
+            key={index}
+            onMouseDown={handleMouseDown}
+            onClick={openLightbox(index)}
+            className='w-full cursor-pointer'
+          >
             <LazyImage
               src={image}
               alt={`${title} ${index + 1}`}
@@ -46,7 +75,7 @@ const WorkCard = ({ images, title }) => {
             />
           </div>
         ))}
-      </Carousel>
+      </Slider>
       <div className="px-6 py-4">
         <div className="text-center text-xl mb-2">{title}</div>
       </div>

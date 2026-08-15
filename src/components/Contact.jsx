@@ -64,7 +64,7 @@ const Contact = () => {
         message: "Message sent successfully! Thank you for reaching out.",
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
+    } catch {
       setStatus({
         type: "error",
         message: "Failed to send message. Please try again later.",
@@ -114,7 +114,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-sky-300 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-sky-300 focus:border-transparent outline-hidden transition-all"
                 placeholder="Your name"
               />
             </div>
@@ -133,7 +133,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-sky-300 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-sky-300 focus:border-transparent outline-hidden transition-all"
                 placeholder="your@email.com"
               />
             </div>
@@ -152,7 +152,7 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-sky-300 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-sky-300 focus:border-transparent outline-hidden transition-all"
                 placeholder="What is this regarding?"
               />
             </div>
@@ -171,7 +171,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows={8}
-                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-sky-300 focus:border-transparent outline-none transition-all resize-none"
+                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-sky-300 focus:border-transparent outline-hidden transition-all resize-none"
                 placeholder="Your message..."
               />
             </div>

@@ -53,21 +53,21 @@ const Gallery = () => {
         }}>GALLERY</h1>
         <div className="flex justify-center mb-8">
           <button
-            className={`px-4 py-2 mx-2 rounded ${activeTab === 'flower' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
+            className={`px-4 py-2 mx-2 rounded-sm ${activeTab === 'flower' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
             onClick={() => handleTabChange('flower')}
             style={{ fontFamily: 'Katibeh, serif' }}
           >
             FLOWERS
           </button>
           <button
-            className={`px-4 py-2 mx-2 rounded ${activeTab === 'characters' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
+            className={`px-4 py-2 mx-2 rounded-sm ${activeTab === 'characters' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
             onClick={() => handleTabChange('characters')}
             style={{ fontFamily: 'Katibeh, serif' }}
           >
             CHARACTERS
           </button>
           <button
-            className={`px-4 py-2 mx-2 rounded ${activeTab === 'others' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
+            className={`px-4 py-2 mx-2 rounded-sm ${activeTab === 'others' ? 'bg-blue-500 text-white' : 'bg-transparent'}`}
             onClick={() => handleTabChange('others')}
             style={{ fontFamily: 'Katibeh, serif' }}
           >

@@ -1,6 +1,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import slick from "react-slick";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../background.css";
@@ -9,6 +9,11 @@ import { flower } from "../data/gallery";
 import works from "../data/work.json";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
+// react-slick is CommonJS with no `exports` map, and Vite's dep optimizer hands
+// back the module's `exports` object instead of unwrapping `.default`. Normalize
+// it here rather than relying on bundler interop.
+const Slider = slick.default ?? slick;
 
 const LazyImage = ({ src, alt, className }) => {
     const [loaded, setLoaded] = useState(false);
